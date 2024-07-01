@@ -1,5 +1,3 @@
-
-
 * {
     box-sizing: border-box;
     font-family: monospace;
@@ -138,19 +136,23 @@ main .container-main .my-picture .content img:hover {
 }
 
 @media screen and (max-width: 920px) {
-    
-    main .container-main .about-me {
-        width: 100%;
+
+    main .container-main .my-picture .content img {
+        display: fixed;
+        width: 0%;
+        height: 0%;
+        transition: 0s;
     }
     
     main .container-main .my-picture{
-        visibility: hidden;
+        display: fixed;
         width: 0%;
+        height: 0%;
     }
 
-    main .container-main .my-picture img {
-        visibility: hidden;
-        width: 0%;
+    main .container-main .about-me {
+        width: 100%;
+        transition: 0.1s;
     }
 
 }
